@@ -1,9 +1,6 @@
 //
 //  VideoDetailViewController.swift
-//  Bynk
-//
 //  Created by Charles Dowd on 20/01/2016.
-//  Copyright © 2016 Bynk.me. All rights reserved.
 //
 
 import Foundation
@@ -18,7 +15,7 @@ class VideoDetailViewController : NSObject {
         didSet {
             NSLog("VideoDetailViewController.progressLevel \(progressLevel)")
             if let view = self.avVideoViewController?.view {
-                JHProgressHUD.didSetProgessLevel(view, progressLevel: progressLevel)
+                MyProgressHUD.didSetProgessLevel(view, progressLevel: progressLevel)
             }
         }
     }
